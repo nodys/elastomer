@@ -1,0 +1,7 @@
+# Ignore unrelevant files
+.DS_Store
+npm-debug.log
+
+# Ignore node modules
+/node_modules/*
+!/node_modules/nova-component
