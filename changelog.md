@@ -1,6 +1,12 @@
 Changelog
 =========
 
+v1.4.0 - Efficacious Frog (2015-04-02) 
+----------------------------------------------------------------------
+
+  - feat: Pass elastomer instance to created, preLink, link and unlink methods
+
+
 v1.3.0 - Nocturnal Pig (2015-04-01) 
 ----------------------------------------------------------------------
 
