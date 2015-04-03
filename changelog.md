@@ -1,6 +1,12 @@
 Changelog
 =========
 
+v1.4.2 - Smart Cow (2015-04-03) 
+----------------------------------------------------------------------
+
+  - fix: Add event handler does not work (addClosable() need an object not a function)
+
+
 v1.4.1 - Smelly Horse (2015-04-02) 
 ----------------------------------------------------------------------
 
