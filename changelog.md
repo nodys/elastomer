@@ -1,6 +1,14 @@
 Changelog
 =========
 
+v1.5.0 - Strong Cheetah (2015-04-12) 
+----------------------------------------------------------------------
+
+  - feat: Add class toggle binder
+  - feat: add binder flag to toggle flag-like attribute
+  - feat: Add logical formatter: not, and, or, xor
+
+
 v1.4.2 - Smart Cow (2015-04-03) 
 ----------------------------------------------------------------------
 
