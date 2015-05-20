@@ -23,7 +23,7 @@
     "monitor": "mocha --reporter spec --watch",
     "debugtest": "mocha --debug-brk --reporter spec",
     "coverage": "rm -rf ./lib-cov && jscoverage ./lib ./lib-cov && COVERAGE=true mocha --reporter html-cov > ./coverage.html && rm -rf ./lib-cov",
-    "jshint": "./node_modules/.bin/jshint --exclude node_modules"
+    "standard": "./node_modules/.bin/standard"
   },
   "dependencies": {
     "debug": "^2.1.1",
@@ -33,12 +33,19 @@
   },
   "devDependencies": {
     "expect.js": "*",
+    "jshint": "*",
     "mocha": "*",
-    "jshint": "*"
+    "standard": "^3.11.0"
   },
   "keywords": [
     "webcomponent",
     "component",
     "browserify"
-  ]
+  ],
+  "standard": {
+    "ignore": [
+      "**/sandbox/**",
+      "**/test/**"
+    ]
+  }
 }
