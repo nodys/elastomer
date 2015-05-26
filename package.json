@@ -18,24 +18,26 @@
     "node": ">= 0.10"
   },
   "scripts": {
-    "test": "mocha",
-    "spec": "mocha --reporter spec",
-    "monitor": "mocha --reporter spec --watch",
-    "debugtest": "mocha --debug-brk --reporter spec",
-    "coverage": "rm -rf ./lib-cov && jscoverage ./lib ./lib-cov && COVERAGE=true mocha --reporter html-cov > ./coverage.html && rm -rf ./lib-cov",
+    "test": "kawa test/elastomer.test.js -t cssy -t babelify --phantom --reporter spec",
+    "monitor": "kawa test/elastomer.test.js -t cssy -t babelify --phantom --reporter spec --watch",
     "standard": "./node_modules/.bin/standard"
   },
   "dependencies": {
-    "debug": "^2.1.1",
+    "debug": "*",
     "extend": "^2.0.0",
     "observe-js": "^0.4.2",
     "rivets": "^0.8.0"
   },
   "devDependencies": {
+    "babelify": "^6.1.2",
+    "cssy": "^1.0.2",
     "expect.js": "*",
+    "htmly": "^1.0.2",
     "jshint": "*",
+    "kawa": "^0.3.1",
     "mocha": "*",
-    "standard": "^3.11.0"
+    "standard": "^3.11.0",
+    "webcomponents.js": "^0.7.1"
   },
   "keywords": [
     "webcomponent",
