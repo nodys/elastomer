@@ -18,8 +18,9 @@
     "node": ">= 0.10"
   },
   "scripts": {
-    "test": "kawa test/elastomer.test.js -t cssy -t babelify --phantom --reporter spec",
-    "monitor": "kawa test/elastomer.test.js -t cssy -t babelify --phantom --reporter spec --watch",
+    "test": "kawa test/elastomer.test.js -t cssy -t htmly -t babelify --phantom --reporter spec",
+    "monitor": "kawa test/elastomer.test.js -t cssy -t htmly -t babelify --phantom --reporter spec --watch",
+    "matrix": "kawa test/elastomer.test.js -t cssy -t htmly -t babelify --phantom --reporter matrix --watch",
     "standard": "./node_modules/.bin/standard"
   },
   "dependencies": {
@@ -30,11 +31,11 @@
   },
   "devDependencies": {
     "babelify": "^6.1.2",
-    "cssy": "^1.0.2",
+    "cssy": "^1.1.2",
     "expect.js": "*",
-    "htmly": "^1.0.2",
+    "htmly": "^1.1.0",
     "jshint": "*",
-    "kawa": "^0.3.1",
+    "kawa": "^0.4.2",
     "mocha": "*",
     "standard": "^3.11.0",
     "webcomponents.js": "^0.7.1"

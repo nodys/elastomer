@@ -1,0 +1,8 @@
+#outer {
+  display: block;
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 200px;
+  background-color: #008ABE;
+}

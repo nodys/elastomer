@@ -15,9 +15,15 @@ describe('elastomer', function () {
   })
 
   it('functional test', function () {
-    console.log('HTMLElement.prototype.createShadowRoot', HTMLElement.prototype.createShadowRoot )
     require('./fixtures/elasto-basic')
     var el = document.createElement('elasto-basic')
+    el.innerHTML = 'Light Domdd'
+    base.appendChild(el)
+  })
+
+  it.only('functional test', function () {
+    require('./fixtures/elasto-cssyhtmly')
+    var el = document.createElement('elasto-cssyhtmly')
     el.innerHTML = 'Light Domdd'
     base.appendChild(el)
   })

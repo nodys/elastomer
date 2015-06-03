@@ -1,29 +1,3 @@
-// var elastomer = require('../..')
-//
-// class ElastoBasic extends elastomer.HTMLElastomer {
-//   initialize (elasto) {
-//     elasto.html = `<div id="outer">{{hello}} <content></content></div>`
-//     elasto.css = `#outer {
-//       display: block;
-//       position: absolute;
-//       width: 90px;
-//       height: 90px;
-//       background-color: #F00BA5;
-//     }`
-//   }
-//
-//   link (scope, elasto) {
-//     scope.hello = 'Hello'
-//     setTimeout(function () {
-//       scope.hello = "Foob"
-//       elasto.update()
-//     },1000)
-//   }
-// }
-//
-// module.exports = elastomer('elasto-basic', { prototype: ElastoBasic.prototype })
-
-
 var elastomer = require('../..')
 
 module.exports = elastomer('elasto-basic', {
@@ -41,7 +15,7 @@ module.exports = elastomer('elasto-basic', {
 function link (scope, elasto) {
   scope.hello = 'Hello'
   setTimeout(function () {
-    scope.hello = "Foob"
+    scope.hello = 'Foob'
     elasto.update()
-  },1000)
+  }, 1000)
 }
