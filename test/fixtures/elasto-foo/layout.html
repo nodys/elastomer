@@ -1,0 +1,20 @@
+<div id="outer">
+  <h3>Shadow {{hello}}(val:{{val}})</h3>
+  <div>
+    Val: <input type="text" nv-value="val">
+  </div>
+  <div>
+    Size: <input type="range" min="0" max="100" nv-value="size"> {{size | concat '%'}}
+  </div>
+  <div class="progress">
+    <div nv-style-width="size | concat '%'"></div>
+  </div>
+  Content:
+  <div class="container block-style">
+    <content></content>
+  </div>
+  <elasto-qux val="test">
+    <h3>Light dom in qux, but related to foo</h3>
+    In qux (val from foo:{{val}})
+  </elasto-qux>
+</div>

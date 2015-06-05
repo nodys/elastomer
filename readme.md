@@ -26,3 +26,6 @@ Foo.prototype.link = function(scope) {
   <x-foo></x-foo>
 </div>
 ```
+
+
+---

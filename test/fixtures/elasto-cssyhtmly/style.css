@@ -1,8 +1,12 @@
 #outer {
   display: block;
   position: absolute;
-  width: 90px;
-  height: 90px;
+  width: 200px;
+  height: 200px;
   left: 200px;
-  background-color: #008ABE;
+  background-color: #3badd9;
+}
+
+h3 {
+  color: rgb(232, 19, 72)
 }
