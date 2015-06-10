@@ -11,7 +11,7 @@ describe('elastomer', function () {
   before(function () {
     base = document.createElement('div')
     document.body.appendChild(base)
-    base.innerHTML = '<h3>This main document</h3>'
+    base.innerHTML = '<h3>This main document</h3><p>It must not be styled</p>'
   })
 
   // it('functional test', function () {
@@ -21,12 +21,13 @@ describe('elastomer', function () {
   //   base.appendChild(el)
   // })
 
+  it('do not run me', function () {
+    console.log('run')
+  })
+
   it.only('functional test', function () {
     require('./fixtures/elasto-layout')
-    // require('./fixtures/elasto-qux')
     var el = document.createElement('elasto-layout')
-    // el.setAttribute('val','qux')
-    // el.innerHTML = '<h3>Light (Raw style expected)</h3><span>dom {{hello}}{{val}}</span><elasto-foo val="bob"><h3>Inner (raw) {{val}}</h3></elasto-foo>'
     base.appendChild(el)
   })
 })

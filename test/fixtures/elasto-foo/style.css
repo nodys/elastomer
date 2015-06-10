@@ -31,3 +31,8 @@ div.progress > div {
   height: 10px;
   background: rgb(0, 110, 255);
 }
+
+:host elasto-qux::shadow ::content h3::before {
+  content: 'FROM FOO';
+  color: rgb(236, 255, 7);
+}

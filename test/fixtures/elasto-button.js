@@ -1,18 +1,18 @@
-var elastomer = require('../../..')
+var elastomer = require('../..')
 
-module.exports = elastomer('elasto-foo', {
-  html: require('./layout.html'),
-  css: require('./style.css'),
+module.exports = elastomer('elasto-button', {
+  html: '<div>BUTTON</div>',
+  css: require('./elasto-button.css'),
   link: link
 })
 
 function link (scope, elasto) {
-  scope.size = 0
-  scope.val = 'Foobar'
+  scope.val = 'Qux'
   elasto.mapAttribute('val')
+  scope.size = 42
+
   elasto.setTimeout(function () {
-    scope.hello = 'Foob'
-    elasto.update()
+    scope.val = 'QuxUpdated'
   }, 1000)
 
   var inc = 1
@@ -22,6 +22,6 @@ function link (scope, elasto) {
     if (scope.size > 100 || scope.size < 0) {
       inc = -inc
     }
-    elasto.update()
   }, 50)
+
 }

@@ -1,5 +1,5 @@
 <div id="outer">
-  <h3>Shadow {{hello}}(val:{{val}})</h3>
+  <h3>Shadow SHOULD BE BLUE {{hello}}(val:{{val}})</h3>
   <div>
     Val: <input type="text" nv-value="val">
   </div>
@@ -9,12 +9,19 @@
   <div class="progress">
     <div nv-style-width="size | concat '%'"></div>
   </div>
+  Content (My):
+  <div class="container block-style">
+    <content select="div.my"></content>
+  </div>
+
   Content:
   <div class="container block-style">
     <content></content>
   </div>
+
   <elasto-qux val="test">
-    <h3>Light dom in qux, but related to foo</h3>
-    In qux (val from foo:{{val}})
+    <h3>Light dom in qux, but related to foo SHOULD BE BLUE</h3>
+    In qux (val from foo.size:{{size}} <input type="text" nv-value="size">)
+    <content select=".crazy"></content>
   </elasto-qux>
 </div>

@@ -35,7 +35,7 @@
     "expect.js": "*",
     "htmly": "^1.1.0",
     "jshint": "*",
-    "kawa": "^0.4.2",
+    "kawa": "^0.4.4",
     "mocha": "*",
     "standard": "^3.11.0",
     "webcomponents.js": "^0.7.1"

@@ -1,0 +1,22 @@
+:host {
+  display: block;
+  background: red;
+  color: white;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: opacity 420ms ease-in-out;
+}
+
+
+:host(:hover) {
+  opacity: 1;
+}
+
+
+div:hover {
+  color: rgb(218, 188, 32);
+}
+
+div {
+  color: rgb(32, 218, 185);
+}
