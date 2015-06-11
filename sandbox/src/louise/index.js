@@ -1,10 +1,43 @@
 
 var elastomer = require('nova-elastomer')
+var totemize = require('totemize')
 
-var Louise = module.exports = elastomer('x-louise', {
-  html: `<div>LOUISE</div>`,
-  css:  `div{ background: #d4d0d6 }`,
-  link: function() {
-    console.log('Link louise')
-  }
+require('./item')
+
+module.exports = elastomer('x-louise', {
+  html: require('./layout.html'),
+  css: require('./style.css'),
+  link: link
 })
+
+function link (scope, elasto) {
+  // scope.item = {id: 'foo'}
+  scope.list = []
+
+  this.updateList = function (count) {
+    console.time('updateList')
+    scope.list = []
+    count = count || 10
+    for (var i = 0; i < count; i++) {
+      scope.list.push({
+        id: totemize({
+          separator: '-'
+        })
+      })
+    }
+    console.timeEnd('updateList')
+  }
+
+  this.updateList(10)
+
+  var self = this
+  this.test = function () {
+    elasto.setTimeout(function() {
+      self.updateList(100)
+      elasto.setTimeout(function() {
+        self.updateList(1)
+      }, 1000)
+    }, 1000)
+  }
+
+}
