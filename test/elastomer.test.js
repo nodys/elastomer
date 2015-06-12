@@ -2,8 +2,9 @@
 
 require('webcomponents.js/webcomponents-lite.min.js')
 
-// var elastomer = require('../lib/elastomer')
-// var expect = require('expect.js')
+var elastomer = require('..')
+
+// elastomer.Elastomer.config.native = true
 
 describe('elastomer', function () {
   var base

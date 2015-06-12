@@ -17,7 +17,7 @@ function link (scope, elasto) {
   this.updateList = function (count) {
     console.time('updateList')
     scope.list = []
-    count = count || 10
+    count = count === undefined ? 1 : count
     for (var i = 0; i < count; i++) {
       scope.list.push({
         id: totemize({
@@ -38,6 +38,10 @@ function link (scope, elasto) {
         self.updateList(1)
       }, 1000)
     }, 1000)
+  }
+
+  this.watchyStat = function() {
+    console.log(elastomer.watchy.WatchyObserver._count)
   }
 
 }

@@ -16,12 +16,23 @@
 
   Content:
   <div class="container block-style">
-    <content></content>
+    <content>
+      <div>Default content (SHOULD NOT BE VISIBLE)</div>
+    </content>
+  </div>
+
+  Default Content:
+  <div class="container block-style">
+    <content>
+      <div>Default content (SHOULD BE VISIBLE)</div>
+    </content>
   </div>
 
   <elasto-qux val="test">
     <h3>Light dom in qux, but related to foo SHOULD BE BLUE</h3>
     In qux (val from foo.size:{{size}} <input type="text" nv-value="size">)
-    <content select=".crazy"></content>
+    <content select=".crazy">
+      <div>Could be .crazy ... but specification do not handle this like this</div>
+    </content>
   </elasto-qux>
 </div>

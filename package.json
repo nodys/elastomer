@@ -19,8 +19,8 @@
   },
   "scripts": {
     "test": "kawa test/elastomer.test.js -t cssy -t htmly -t babelify --phantom --reporter spec",
-    "monitor": "kawa test/elastomer.test.js -t cssy -t htmly -t babelify --phantom --reporter spec --watch",
-    "matrix": "kawa test/elastomer.test.js -t cssy -t htmly -t babelify --phantom --reporter matrix --watch",
+    "monitor": "kawa test/elastomer.test.js -t cssy -t htmly -t babelify --reporter spec --watch",
+    "matrix": "kawa test/elastomer.test.js -t cssy -t htmly -t babelify --reporter matrix --watch",
     "standard": "./node_modules/.bin/standard"
   },
   "dependencies": {
