@@ -1,4 +1,7 @@
 body {
   font-family: sans-serif;
-  padding: 50px;
+}
+
+x-item div.item.x-item-scope {
+  background: red
 }
