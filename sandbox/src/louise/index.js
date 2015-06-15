@@ -44,4 +44,8 @@ function link (scope, elasto) {
     console.log(elastomer.watchy.WatchyObserver._count)
   }
 
+
+  scope.handleReload = function (ev) {
+    console.log('Reload', ev)
+  }
 }
