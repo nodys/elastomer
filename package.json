@@ -29,7 +29,8 @@
     "debug": "^2.1.1",
     "extend": "^2.0.0",
     "observe-js": "^0.4.2",
-    "rivets": "^0.8.0"
+    "rivets": "^0.8.0",
+    "sprintf-js": "^1.0.2"
   },
   "devDependencies": {
     "expect.js": "*",
