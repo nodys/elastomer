@@ -1,7 +1,7 @@
 {
   "name": "nova-elastomer",
   "description": "Web component for commonjs envrionnement",
-  "version": "1.7.0",
+  "version": "1.8.1",
   "author": "Jean Ponchon <jean.ponchon@novadiscovery.com>",
   "repository": {
     "type": "git",
@@ -27,8 +27,8 @@
     "debug": "*",
     "extend": "^2.0.0",
     "observe-js": "^0.4.2",
-    "rivets": "0.8.1",
-    "sightglass": "git+https://github.com/nopnop/sightglass.git#e6120f54865b0baf92625ce1f328719999be0958"
+    "rivets": "^0.8.1",
+    "sprintf-js": "^1.0.2"
   },
   "devDependencies": {
     "babelify": "^6.1.2",
