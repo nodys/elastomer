@@ -11,5 +11,9 @@ module.exports = elastomer('elasto-layout', {
 })
 
 function link (scope, elasto) {
-
+  scope.model = {
+    ctx: {
+      component: 'hub-dash'
+    }
+  }
 }

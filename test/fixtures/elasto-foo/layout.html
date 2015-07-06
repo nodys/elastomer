@@ -1,5 +1,6 @@
 <div id="outer">
   <h3>Shadow SHOULD BE BLUE {{hello}}(val:{{val}})</h3>
+
   <div>
     Val: <input type="text" nv-value="val">
   </div>
@@ -31,6 +32,9 @@
   <elasto-qux val="test">
     <h3>Light dom in qux, but related to foo SHOULD BE BLUE</h3>
     In qux (val from foo.size:{{size}} <input type="text" nv-value="size">)
+      <div>
+        <elasto-bindtest nv-bind-model="app.ctx"></elasto-bindtest>
+      </div>
     <content select=".crazy">
       <div>Could be .crazy ... but specification do not handle this like this</div>
     </content>
