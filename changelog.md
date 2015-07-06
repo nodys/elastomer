@@ -1,6 +1,25 @@
 Changelog
 =========
 
+v1.9.0 - Large Sheep (2015-07-06) 
+----------------------------------------------------------------------
+
+  - fix: Support raw css in native mode
+  - fix: Fix watchy infinit change watcher bug
+  - fix: Need a shadow element to prevent invalid binding
+  - fix: Ignore keyframe rules
+  - fix: Return querySelector value
+  - fix: Call link even if there is no layout
+  - test: Binding test
+  - test: Prepare tests
+  - feat: Expose registered element localName
+  - feat: Stabilize css shim and elastomer shadow layer
+  - feat: ONgoing Dom abstraction
+  - feat: ONgoing Dom abstraction
+  - feat: Shadow dom emulation with style scoping and content injection
+  - refactor: Ongoing refactoring on elastoShadow
+
+
 v1.8.2 - Cute Rat (2015-07-03) 
 ----------------------------------------------------------------------
 
