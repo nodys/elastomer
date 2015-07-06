@@ -1,14 +1,34 @@
-/* jshint undef: false, unused: false */
+/* global describe it  before */
 
-var elastomer = require('../lib/elastomer')
-var expect = require('expect.js')
-var join   = require('path').join
+require('webcomponents.js/webcomponents-lite.min.js')
 
+var elastomer = require('..')
 
-function fixp(filename) {
-  return join(__dirname, '/fixtures', filename);
-}
+// elastomer.Elastomer.config.native = true
 
-describe('elastomer', function(){
-  it('should be tested ...')
+describe('elastomer', function () {
+  var base
+
+  before(function () {
+    base = document.createElement('div')
+    document.body.appendChild(base)
+    base.innerHTML = '<h3>This main document</h3><p>It must not be styled</p>'
+  })
+
+  // it('functional test', function () {
+  //   require('./fixtures/elasto-basic')
+  //   var el = document.createElement('elasto-basic')
+  //   el.innerHTML = '<span>This is lightDom</span>'
+  //   base.appendChild(el)
+  // })
+
+  it('do not run me', function () {
+    console.log('run')
+  })
+
+  it.only('functional test', function () {
+    require('./fixtures/elasto-layout')
+    var el = document.createElement('elasto-layout')
+    base.appendChild(el)
+  })
 })

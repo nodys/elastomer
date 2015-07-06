@@ -1,5 +1,7 @@
 var domready = require('domready')
 
+require('webcomponents.js/webcomponents-lite.min.js')
+
 window.app = {
   debug: require('debug')
 }

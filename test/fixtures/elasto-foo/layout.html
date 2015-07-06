@@ -1,0 +1,42 @@
+<div id="outer">
+  <h3>Shadow SHOULD BE BLUE {{hello}}(val:{{val}})</h3>
+
+  <div>
+    Val: <input type="text" nv-value="val">
+  </div>
+  <div>
+    Size: <input type="range" min="0" max="100" nv-value="size"> {{size | concat '%'}}
+  </div>
+  <div class="progress">
+    <div nv-style-width="size | concat '%'"></div>
+  </div>
+  Content (My):
+  <div class="container block-style">
+    <content select="div.my"></content>
+  </div>
+
+  Content:
+  <div class="container block-style">
+    <content>
+      <div>Default content (SHOULD NOT BE VISIBLE)</div>
+    </content>
+  </div>
+
+  Default Content:
+  <div class="container block-style">
+    <content>
+      <div>Default content (SHOULD BE VISIBLE)</div>
+    </content>
+  </div>
+
+  <elasto-qux val="test">
+    <h3>Light dom in qux, but related to foo SHOULD BE BLUE</h3>
+    In qux (val from foo.size:{{size}} <input type="text" nv-value="size">)
+      <div>
+        <elasto-bindtest nv-bind-model="app.ctx"></elasto-bindtest>
+      </div>
+    <content select=".crazy">
+      <div>Could be .crazy ... but specification do not handle this like this</div>
+    </content>
+  </elasto-qux>
+</div>

@@ -1,0 +1,32 @@
+:host {
+  display: inline-block;
+  background-color: #eaddeb;
+  border: 1px solid #ccc;
+  margin: 10px;
+  font-family: sans-serif;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+h3 {
+  color: rgb(142, 185, 38);
+  margin: 0;
+}
+
+
+div.progress {
+  padding: 1px;
+  border: 1px solid #ccc;
+  background: rgb(255, 255, 255);
+  box-sizing: border-box;
+}
+
+div.progress > div {
+  height: 10px;
+  background: rgb(168, 205, 44);
+}
+
+.crazy {
+  color: rgb(30, 190, 232);
+  font-weight: bold;
+}

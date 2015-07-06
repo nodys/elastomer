@@ -18,25 +18,28 @@
     "node": ">= 0.10"
   },
   "scripts": {
-    "test": "mocha",
-    "spec": "mocha --reporter spec",
-    "monitor": "mocha --reporter spec --watch",
-    "debugtest": "mocha --debug-brk --reporter spec",
-    "coverage": "rm -rf ./lib-cov && jscoverage ./lib ./lib-cov && COVERAGE=true mocha --reporter html-cov > ./coverage.html && rm -rf ./lib-cov",
+    "test": "kawa test/elastomer.test.js -t cssy -t htmly -t babelify --phantom --reporter spec",
+    "monitor": "kawa test/elastomer.test.js -t cssy -t htmly -t babelify --reporter spec --watch",
+    "matrix": "kawa test/elastomer.test.js -t cssy -t htmly -t babelify --reporter matrix --watch",
     "standard": "./node_modules/.bin/standard"
   },
   "dependencies": {
-    "debug": "^2.1.1",
+    "debug": "*",
     "extend": "^2.0.0",
     "observe-js": "^0.4.2",
-    "rivets": "^0.8.0",
+    "rivets": "^0.8.1",
     "sprintf-js": "^1.0.2"
   },
   "devDependencies": {
+    "babelify": "^6.1.2",
+    "cssy": "^1.1.2",
     "expect.js": "*",
+    "htmly": "^1.1.0",
     "jshint": "*",
+    "kawa": "^0.4.4",
     "mocha": "*",
-    "standard": "^3.11.0"
+    "standard": "^3.11.0",
+    "webcomponents.js": "^0.7.1"
   },
   "keywords": [
     "webcomponent",

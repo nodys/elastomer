@@ -1,0 +1,38 @@
+:host {
+  display: inline-block;
+  background-color: #eaddeb;
+  border: 1px solid #ccc;
+  margin: 10px;
+  font-family: sans-serif;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+:host h3 {
+  color: rgb(235, 148, 33);
+  margin: 0;
+}
+
+
+.my {
+  display: block;
+  background: rgb(120, 83, 172);
+  border: 1px solid white;
+  padding: 3px;
+}
+
+.crazy {
+  color: red;
+}
+
+.crazy::before {
+  color: rgb(241, 3, 217);
+  content: 'BEFORE CRAZY'
+}
+
+@media (max-width: 500px) {
+  :host h3 {
+    color: rgb(235, 94, 33);
+    margin: 0;
+  }
+}

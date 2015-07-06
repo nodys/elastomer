@@ -1,5 +1,5 @@
 {
-  "name": "testcomponent",
+  "name": "elastomer-sandbox",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -18,10 +18,14 @@
   },
   "dependencies": {
     "babelify": "^5.0.4",
-    "cssy": "^1.0.1",
+    "cssy": "^1.1.2",
     "debug": "^2.1.2",
     "domready": "^1.0.7",
+    "html": "0.0.10",
     "htmly": "^1.0.1",
-    "nova-servdev": "^1.0.0"
+    "nova-servdev": "^1.2.0",
+    "rivets": "^0.8.1",
+    "totemize": "0.0.1",
+    "webcomponents.js": "^0.7.2"
   }
 }
