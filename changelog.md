@@ -1,6 +1,12 @@
 Changelog
 =========
 
+v1.9.2 - Efficacious Bee (2015-07-07) 
+----------------------------------------------------------------------
+
+  - fix: Add a wrapper arround events handler to perform microtask after execution
+
+
 v1.9.1 - Luminous Chimpanzee (2015-07-06) 
 ----------------------------------------------------------------------
 
