@@ -1,6 +1,13 @@
 Changelog
 =========
 
+v1.10.0 - Malicious Dolphin (2015-07-08) 
+----------------------------------------------------------------------
+
+  - test: Add css scoping rules
+  - feat: Enhance css scoping (throw deep, content and shadow)
+
+
 v1.9.2 - Efficacious Bee (2015-07-07) 
 ----------------------------------------------------------------------
 
