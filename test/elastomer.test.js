@@ -9,26 +9,20 @@ var elastomer = require('..')
 describe('elastomer', function () {
   var base
 
-  before(function () {
-    base = document.createElement('div')
-    document.body.appendChild(base)
-    base.innerHTML = '<h3>This main document</h3><p>It must not be styled</p>'
+  require('./elastocss.test.js')
+
+  describe('functional test', function() {
+    before(function () {
+      base = document.createElement('div')
+      document.body.appendChild(base)
+      base.innerHTML = '<h3>This main document for functional tests</h3><p>It must not be styled</p>'
+    })
+
+    it('functional test', function () {
+      require('./fixtures/functional/elasto-layout')
+      var el = document.createElement('elasto-layout')
+      base.appendChild(el)
+    })
   })
 
-  // it('functional test', function () {
-  //   require('./fixtures/elasto-basic')
-  //   var el = document.createElement('elasto-basic')
-  //   el.innerHTML = '<span>This is lightDom</span>'
-  //   base.appendChild(el)
-  // })
-
-  it('do not run me', function () {
-    console.log('run')
-  })
-
-  it.only('functional test', function () {
-    require('./fixtures/elasto-layout')
-    var el = document.createElement('elasto-layout')
-    base.appendChild(el)
-  })
 })

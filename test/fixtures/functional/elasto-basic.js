@@ -1,4 +1,4 @@
-var elastomer = require('../..')
+var elastomer = require('../../..')
 
 module.exports = elastomer('elasto-basic', {
   html: '<div id="outer">{{hello}} <content></content></div>',

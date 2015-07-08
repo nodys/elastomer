@@ -1,0 +1,9 @@
+@-webkit-keyframes animateLoop {
+  0%, 100% {
+    background: #5cbaf2;
+  }
+  50% {
+    background: #1879ba;
+    transform: scale(.9)
+  }
+}

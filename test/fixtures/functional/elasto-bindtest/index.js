@@ -1,4 +1,4 @@
-var elastomer = require('../../..')
+var elastomer = require('../../../..')
 
 module.exports = elastomer('elasto-bindtest', {
   html: require('./layout.html'),

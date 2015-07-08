@@ -1,8 +1,8 @@
 var elastomer = require('../../..')
 
-module.exports = elastomer('elasto-qux', {
-  html: require('./layout.html'),
-  css: require('./style.css'),
+module.exports = elastomer('elasto-button', {
+  html: '<div>BUTTON</div>',
+  css: require('./elasto-button.css'),
   link: link
 })
 
@@ -19,7 +19,7 @@ function link (scope, elasto) {
 
   elasto.setInterval(function () {
     scope.size = inc + parseInt(scope.size, 10)
-    if(scope.size > 100 || scope.size < 0) {
+    if (scope.size > 100 || scope.size < 0) {
       inc = -inc
     }
   }, 50)

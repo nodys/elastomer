@@ -1,4 +1,4 @@
-var elastomer = require('../../..')
+var elastomer = require('../../../..')
 
 require('../elasto-foo')
 require('../elasto-qux')

@@ -1,0 +1,6 @@
+@media (max-width: 500px) {
+  elasto-tag h3.elasto-tag-scope {
+    color: rgb(235, 94, 33);
+    margin: 0;
+  }
+}

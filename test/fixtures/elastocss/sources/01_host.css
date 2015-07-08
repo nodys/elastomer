@@ -1,0 +1,5 @@
+:host {}
+:host(.modifier) {}
+:host .foobar {}
+:host(.modifier) .foobar {}
+.foobar {}

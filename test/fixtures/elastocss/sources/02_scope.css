@@ -1,0 +1,4 @@
+.foobar {}
+#foobar {}
+div #foobar .test {}
+#foobar > p {}

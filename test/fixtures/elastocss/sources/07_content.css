@@ -1,0 +1,5 @@
+:host ::content .foobar {}
+:host div ::content .foobar {}
+:host #local ::content .foobar {}
+div ::content .foobar {}
+div ::content .override !important {}

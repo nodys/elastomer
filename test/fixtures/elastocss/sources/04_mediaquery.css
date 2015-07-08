@@ -1,0 +1,6 @@
+@media (max-width: 500px) {
+  :host h3 {
+    color: rgb(235, 94, 33);
+    margin: 0;
+  }
+}

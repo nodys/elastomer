@@ -1,0 +1,4 @@
+elasto-tag .foobar {}
+elasto-tag #local.elasto-tag-scope .foobar {}
+elasto-tag div.elasto-tag-scope .foobar {}
+elasto-tag div.elasto-tag-scope .override !important {}

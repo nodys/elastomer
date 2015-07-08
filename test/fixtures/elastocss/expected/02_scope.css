@@ -1,0 +1,4 @@
+elasto-tag .foobar.elasto-tag-scope {}
+elasto-tag #foobar.elasto-tag-scope {}
+elasto-tag div #foobar .test.elasto-tag-scope {}
+elasto-tag #foobar > p.elasto-tag-scope {}
