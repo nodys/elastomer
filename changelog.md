@@ -1,6 +1,14 @@
 Changelog
 =========
 
+v1.11.0 - Pervasive Eagle (2015-07-08) 
+----------------------------------------------------------------------
+
+  - fix: Css raw selector must be localized
+  - fix: queryselector root getter
+  - feat: Add accessors to children and childNode in elastodom
+
+
 v1.10.1 - Precipitate Kitten (2015-07-08) 
 ----------------------------------------------------------------------
 
