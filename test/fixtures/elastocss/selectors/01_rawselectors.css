@@ -1,0 +1,11 @@
+:host {}
+:host(.modifier) {}
+:host .a {}
+:host(.modifier) .b {}
+.c {}
+:host /deep/ .d {}
+:host #local /deep/ .e {}
+div /deep/ .f {}
+span /deep/ .g !important {}
+/deep/ .h {}
+.i !important {}

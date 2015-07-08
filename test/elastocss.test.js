@@ -49,4 +49,15 @@ describe('elastomer.ElastoCss', function () {
   it('08_shadow: should remove deep and scope only local rules', function () {
     check(require('./fixtures/elastocss/sources/08_shadow.css'), require('./fixtures/elastocss/expected/08_shadow.css'))
   })
+
+  describe.only('#getSelectors', function () {
+    it('01_rawselectors: should return scoped css selectors', function() {
+      var source = require('./fixtures/elastocss/selectors/01_rawselectors.css').toString()
+      var ecss = ElastoCss.getInstance('elasto-tag', source)
+      var selectors = ecss.getSelectors()
+      console.log(selectors)
+      expect(selectors).eql([".a", ".b", ".c",  "#local", "div", "span",  ".i"])
+      // console.log('ok')
+    })
+  })
 })
