@@ -2,3 +2,4 @@
 :host #local /deep/ .foobar {}
 div /deep/ .foobar {}
 div /deep/ .override !important {}
+/deep/ .really {}

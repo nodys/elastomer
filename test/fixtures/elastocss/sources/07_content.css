@@ -3,3 +3,4 @@
 :host #local ::content .foobar {}
 div ::content .foobar {}
 div ::content .override !important {}
+::content .foobar {}

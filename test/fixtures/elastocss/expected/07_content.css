@@ -3,3 +3,4 @@ elasto-tag div.elasto-tag-scope content .foobar {}
 elasto-tag #local.elasto-tag-scope content .foobar {}
 elasto-tag div.elasto-tag-scope content .foobar {}
 elasto-tag div.elasto-tag-scope content .override !important {}
+elasto-tag content .foobar {}
