@@ -1,6 +1,14 @@
 Changelog
 =========
 
+v1.12.0 - Helpful Cheetah (2015-07-10) 
+----------------------------------------------------------------------
+
+  - fix: Remove on-* binder with microTask check because of performance issues
+  - test: Cleanup
+  - feat: Add Elastomer.once
+
+
 v1.11.1 - Sensitive Crocodile (2015-07-09) 
 ----------------------------------------------------------------------
 
