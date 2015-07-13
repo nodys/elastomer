@@ -5,6 +5,12 @@
     Val: <input type="text" nv-value="val">
   </div>
   <div>
+    app.ctx.path: {{app.ctx.path}}
+  </div>
+  <div>
+    foo: <input type="text" nv-value="foo"> {{foo}}
+  </div>
+  <div>
     Size: <input type="range" min="0" max="100" nv-value="size"> {{size | concat '%'}}
   </div>
   <div class="progress">
@@ -13,6 +19,11 @@
   Content (My):
   <div class="container block-style">
     <content select="div.my"></content>
+  </div>
+
+  List:
+  <div>
+    <div nv-each-item="list">{{item}}</div>
   </div>
 
   Content:
@@ -33,7 +44,7 @@
     <h3>Light dom in qux, but related to foo SHOULD BE BLUE</h3>
     In qux (val from foo.size:{{size}} <input type="text" nv-value="size">)
       <div>
-        <elasto-bindtest nv-bind-model="app.ctx"></elasto-bindtest>
+        <!-- <elasto-bindtest nv-bind-model="app.ctx"></elasto-bindtest> -->
       </div>
     <content select=".crazy">
       <div>Could be .crazy ... but specification do not handle this like this</div>

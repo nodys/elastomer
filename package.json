@@ -26,8 +26,11 @@
   "dependencies": {
     "debug": "*",
     "extend": "^2.0.0",
+    "lodash.debounce": "^3.1.1",
+    "lodash.throttle": "^3.0.4",
     "observe-js": "^0.4.2",
     "rivets": "^0.8.1",
+    "sightglass": "git+https://github.com/nopnop/sightglass.git#fixRivetsMemoryLeak",
     "sprintf-js": "^1.0.2"
   },
   "devDependencies": {
