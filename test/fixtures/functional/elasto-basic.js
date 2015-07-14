@@ -16,6 +16,5 @@ function link (scope, elasto) {
   scope.hello = 'Hello'
   setTimeout(function () {
     scope.hello = 'Foob'
-    elasto.update()
   }, 1000)
 }

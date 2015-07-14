@@ -1,7 +1,7 @@
 var elastomer = require('../../..')
 
 module.exports = elastomer('elasto-button', {
-  html: '<div>BUTTON</div>',
+  html: '<div>{{val}}</div>',
   css: require('./elasto-button.css'),
   link: link
 })

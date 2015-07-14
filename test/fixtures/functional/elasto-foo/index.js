@@ -17,7 +17,6 @@ function link (scope, elasto) {
   elasto.mapAttribute('val')
   elasto.setTimeout(function () {
     scope.hello = 'Foob'
-    elasto.update()
   }, 1000)
 
   // window.scope = scope
@@ -71,7 +70,7 @@ function link (scope, elasto) {
       // scope.list.pop()
     }
     // scope.list.change()
-    // scope.list.splice(3,1, 'FOO_'  + Math.round(Math.random() * 1000000000))
+    scope.list.splice(3,1, 'FOO_'  + Math.round(Math.random() * 1000000000))
     scope.list = scope.list
 
     // elasto.update()
