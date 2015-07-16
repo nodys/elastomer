@@ -1,6 +1,6 @@
 /* global describe it  before */
 
-require('webcomponents.js/webcomponents-lite.min.js')
+require('./polyfills.js')
 
 var elastomer = require('..')
 
