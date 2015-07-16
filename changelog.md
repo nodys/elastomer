@@ -1,6 +1,20 @@
 Changelog
 =========
 
+v1.14.0 - Hairy Fox (2015-07-16) 
+----------------------------------------------------------------------
+
+  - feat: Expose classList shim
+  - feat: Add shadow dom id map to elasto
+  - feat: Utils class management now support browser without classList
+  - fix: Unimplemented api
+  - fix: Do not try to go through invalid node list
+  - fix: Webcomponents polyfills does not work well with commonjs environnement
+  - fix: IE does not support template well enough to use is in elastoshadow
+  - fix: Style binder must stay silent if the style is invalid (according to platform)
+  - test: fix node removal IE does not support node.remove()
+
+
 v1.13.1 - Speedy Kangaroo (2015-07-14) 
 ----------------------------------------------------------------------
 
