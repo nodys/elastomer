@@ -40,6 +40,6 @@ function link (scope, elasto) {
   // })
 
   scope.handleRemove = function () {
-    elasto.host.remove()
+    elasto.host.parentElement.removeChild(elasto.host)
   }
 }
