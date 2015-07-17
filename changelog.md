@@ -1,6 +1,14 @@
 Changelog
 =========
 
+v1.15.0 - Propitious Dolphin (2015-07-17) 
+----------------------------------------------------------------------
+
+  - refactor: (Possible breaking change) Change the way mappers calls change callbacks
+  - feat: Support larger kind of events with Elastomer#on()
+  - feat: Provide a dedicated webcomponents-lite.js version
+
+
 v1.14.0 - Hairy Fox (2015-07-16) 
 ----------------------------------------------------------------------
 
