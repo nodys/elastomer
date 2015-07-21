@@ -1,6 +1,13 @@
 Changelog
 =========
 
+v1.15.1 - Bellicose Turtle (2015-07-21) 
+----------------------------------------------------------------------
+
+  - fix: Watchy side effect and invalid property binding
+  - feat: Expose utils on main API
+
+
 v1.15.0 - Propitious Dolphin (2015-07-17) 
 ----------------------------------------------------------------------
 
