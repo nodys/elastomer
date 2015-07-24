@@ -1,6 +1,13 @@
 Changelog
 =========
 
+v1.17.0 - Deadly Giraffe (2015-07-24) 
+----------------------------------------------------------------------
+
+  - fix: Fix null and undefined handling in map*
+  - feat: Add Elastomer#mapFlag
+
+
 v1.16.1 - Strong Hippopotamus (2015-07-23) 
 ----------------------------------------------------------------------
 
