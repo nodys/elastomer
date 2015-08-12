@@ -49,6 +49,7 @@
   ],
   "standard": {
     "ignore": [
+      "**/webcomponents-lite.js",
       "**/sandbox/**",
       "**/test/**"
     ]
