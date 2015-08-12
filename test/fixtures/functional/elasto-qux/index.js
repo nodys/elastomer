@@ -11,6 +11,14 @@ function link (scope, elasto) {
   elasto.mapAttribute('val')
   scope.size = 42
 
+  elasto.mapProperty('foo-bar', function (val) {
+    console.log('foo-bar change', val)
+  })
+
+  elasto.mapProperty('fooBar', function (val) {
+    console.log('fooBar change', val)
+  })
+
   elasto.setTimeout(function () {
     scope.val = 'QuxUpdated'
   }, 1000)

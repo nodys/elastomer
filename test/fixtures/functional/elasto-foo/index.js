@@ -11,6 +11,7 @@ module.exports = elastomer('elasto-foo', {
 function link (scope, elasto) {
   scope.size = 0
   scope.val = 'Foobar'
+  scope.fooBar = 'fooBar'
   scope.app = {}
   scope.app.ctx = createContext()
   scope.list = ['foo', 'bar']
