@@ -11,13 +11,7 @@ function link (scope, elasto) {
   elasto.mapAttribute('val')
   scope.size = 42
 
-  elasto.mapProperty('foo-bar', function (val) {
-    console.log('foo-bar change', val)
-  })
-
-  elasto.mapProperty('fooBar', function (val) {
-    console.log('fooBar change', val)
-  })
+  elasto.mapProperty('fooBar')
 
   elasto.setTimeout(function () {
     scope.val = 'QuxUpdated'
@@ -27,7 +21,7 @@ function link (scope, elasto) {
 
   elasto.setInterval(function () {
     scope.size = inc + parseInt(scope.size, 10)
-    if(scope.size > 100 || scope.size < 0) {
+    if (scope.size > 100 || scope.size < 0) {
       inc = -inc
     }
   }, 50)
