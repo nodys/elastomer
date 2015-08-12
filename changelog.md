@@ -1,6 +1,14 @@
 Changelog
 =========
 
+v1.18.0 - Intransigent Goldfish (2015-08-12) 
+----------------------------------------------------------------------
+
+  - test: Cleanup tests
+  - refactor: Deprecation warning on old class binders
+  - feat: Use camelCase conversion for property binding
+
+
 v1.17.0 - Deadly Giraffe (2015-07-24) 
 ----------------------------------------------------------------------
 
