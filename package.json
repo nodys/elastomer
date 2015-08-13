@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "debug": "*",
+    "evenity": "^1.0.0",
     "extend": "^2.0.0",
     "rivets": "^0.8.1",
     "sightglass": "git+https://github.com/nopnop/sightglass.git#fixRivetsMemoryLeak",
