@@ -1,6 +1,14 @@
 Changelog
 =========
 
+v1.19.0 - Candid Snake (2015-08-13) 
+----------------------------------------------------------------------
+
+  - feat: Use evenity to manage events
+  - feat: Experimental mapping for flag on property and attribute
+  - fix: Does not return the element constructor when prototype is provided
+
+
 v1.18.0 - Intransigent Goldfish (2015-08-12) 
 ----------------------------------------------------------------------
 
