@@ -1,6 +1,14 @@
 Changelog
 =========
 
+v1.22.0 - Friendly Kangaroo (2015-11-05) 
+----------------------------------------------------------------------
+
+  - feat: Add support for scoped model mapping
+  - feat: The default scope no have a model object
+  - fix: Ignore allready closed watcher
+
+
 v1.21.3 - Querulous Snail (2015-10-19) 
 ----------------------------------------------------------------------
 
