@@ -2,6 +2,8 @@
 
 require('./polyfills.js')
 
+window.appDebug = require('debug')
+
 var elastomer = require('..')
 
 // elastomer.Elastomer.config.native = true
