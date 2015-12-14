@@ -1,1 +1,1 @@
-require('./webcomponents-lite.js')
+require('../webcomponents-lite.js')

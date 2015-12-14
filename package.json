@@ -24,23 +24,20 @@
     "standard": "./node_modules/.bin/standard"
   },
   "dependencies": {
+    "babel-runtime": "^5.8.34",
+    "babelify": "^6.4.0",
     "debug": "*",
     "evenity": "^1.0.0",
     "extend": "^2.0.0",
-    "rivets": "^0.8.1",
-    "sightglass": "git+https://github.com/nopnop/sightglass.git#fixRivetsMemoryLeak",
     "sprintf-js": "^1.0.2"
   },
   "devDependencies": {
-    "babelify": "^6.1.2",
     "cssy": "^1.1.2",
     "expect.js": "*",
     "htmly": "^1.1.0",
     "kawa": "^0.4.4",
     "mocha": "*",
-    "standard": "^3.11.0",
-    "uglifyify": "^3.0.1",
-    "webcomponents.js": "^0.7.1"
+    "standard": "^3.11.0"
   },
   "keywords": [
     "webcomponent",
@@ -52,6 +49,16 @@
       "**/webcomponents-lite.js",
       "**/sandbox/**",
       "**/test/**"
+    ]
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "optional": "runtime"
+        }
+      ]
     ]
   }
 }
