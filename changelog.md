@@ -1,6 +1,15 @@
 Changelog
 =========
 
+v1.26.0 - Coldblooded Rabbit (2015-12-14) 
+----------------------------------------------------------------------
+
+  - fix: localName on pre registeredElement
+  - feat: Use modified rivets implementation
+  - feat: Add sub-watcher for collections
+  - refactor: Copy rivets sources
+
+
 v1.25.0 - Adroit Panda (2015-12-11) 
 ----------------------------------------------------------------------
 
