@@ -1,6 +1,14 @@
 Changelog
 =========
 
+v1.27.0 - Lovable Camel (2015-12-21) 
+----------------------------------------------------------------------
+
+  - fix: Add event on input binding (not sure of the event name)
+  - fix: Linked is set to false only when unlink method is defined
+  - feat: Add elastomer.createProto() to init prototype from native HTML element
+
+
 v1.26.1 - Loud Rat (2015-12-15) 
 ----------------------------------------------------------------------
 
