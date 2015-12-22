@@ -29,6 +29,7 @@
     "debug": "*",
     "evenity": "^1.0.0",
     "extend": "^2.0.0",
+    "lodash.debounce": "^3.1.1",
     "sprintf-js": "^1.0.2"
   },
   "devDependencies": {
