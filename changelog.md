@@ -1,6 +1,12 @@
 Changelog
 =========
 
+v1.28.3 - Equanimous Zebra (2016-01-14) 
+----------------------------------------------------------------------
+
+  - fix: Rivets refatoring view parse function for optimization
+
+
 v1.28.2 - Munificent Kangaroo (2016-01-13) 
 ----------------------------------------------------------------------
 
