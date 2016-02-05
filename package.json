@@ -18,24 +18,25 @@
     "node": ">= 0.10"
   },
   "scripts": {
-    "test": "kawa test/elastomer.test.js -t cssy -t htmly -t babelify --phantom --reporter spec",
-    "monitor": "kawa test/elastomer.test.js -t cssy -t htmly -t babelify --reporter spec --watch",
-    "matrix": "kawa test/elastomer.test.js -t cssy -t htmly -t babelify --reporter matrix --watch",
+    "test": "kawa test/elastomer.test.js --phantom --reporter spec",
+    "monitor": "kawa test/elastomer.test.js --reporter spec --watch",
+    "matrix": "kawa test/elastomer.test.js --reporter matrix --watch",
     "standard": "./node_modules/.bin/standard"
   },
   "dependencies": {
-    "babel-runtime": "^5.8.34",
-    "babelify": "^6.4.0",
+    "babel-plugin-transform-runtime": "^6.4.3",
+    "babel-preset-es2015": "^6.3.13",
+    "babelify": "^7.2.0",
     "debug": "*",
     "evenity": "^1.0.0",
     "extend": "^2.0.0",
     "lodash.debounce": "^3.1.1",
-    "sprintf-js": "^1.0.2"
+    "cssy": "^1.1.2",
+    "sprintf-js": "^1.0.2",
+    "htmly": "^1.1.0"
   },
   "devDependencies": {
-    "cssy": "^1.1.2",
     "expect.js": "*",
-    "htmly": "^1.1.0",
     "kawa": "^0.4.4",
     "mocha": "*",
     "standard": "^3.11.0"
@@ -54,10 +55,17 @@
   },
   "browserify": {
     "transform": [
+      "cssy",
+      "htmly",
       [
         "babelify",
         {
-          "optional": "runtime"
+          "presets": [
+            "es2015"
+          ],
+          "plugins": [
+            "transform-runtime"
+          ]
         }
       ]
     ]
