@@ -7,12 +7,7 @@
     "type": "git",
     "url": "http://git.novadiscovery.net/webco/elastomer.git"
   },
-  "licenses": [
-    {
-      "type": "Copyright Novadiscovery",
-      "url": "http://www.novadiscovery.com/"
-    }
-  ],
+  "license": "MIT",
   "main": "lib/index",
   "engines": {
     "node": ">= 0.10"
@@ -49,7 +44,7 @@
   "standard": {
     "ignore": [
       "**/webcomponents-lite.js",
-      "**/sandbox/**",
+      "**/lib/rivets/**",
       "**/test/**"
     ]
   },
