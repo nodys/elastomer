@@ -1,11 +1,11 @@
 {
-  "name": "nova-elastomer",
-  "description": "Web component for commonjs envrionnement",
+  "name": "elastomer",
+  "description": "A web-component library for commonjs based on rivet",
   "version": "1.29.1",
   "author": "Jean Ponchon <jean.ponchon@novadiscovery.com>",
   "repository": {
     "type": "git",
-    "url": "http://git.novadiscovery.net/webco/elastomer.git"
+    "url": "https://github.com/nodys/elastomer.git"
   },
   "license": "MIT",
   "main": "lib/index",
@@ -64,5 +64,8 @@
         }
       ]
     ]
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
