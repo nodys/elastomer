@@ -1,6 +1,14 @@
 Changelog
 =========
 
+v2.0.0 - Malicious Dolphin (2016-02-05) 
+----------------------------------------------------------------------
+
+  - refactor: Change package.json for open-source release
+  - refactor: Drop old node versions
+  - refactor: Prepare open-source release
+
+
 v1.29.1 - Noisy Eagle (2016-01-29) 
 ----------------------------------------------------------------------
 
