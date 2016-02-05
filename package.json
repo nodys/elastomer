@@ -10,7 +10,7 @@
   "license": "MIT",
   "main": "lib/index",
   "engines": {
-    "node": ">= 0.10"
+    "node": ">= 4"
   },
   "scripts": {
     "test": "kawa test/elastomer.test.js --phantom --reporter spec",
