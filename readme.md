@@ -1,10 +1,13 @@
 # elastomer
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+[![travis][travis-image]][travis-url]
 [![npm][npm-image]][npm-url]
 [![downloads][downloads-image]][downloads-url]
 
 [npm-image]: https://img.shields.io/npm/v/elastomer.svg?style=flat
 [npm-url]: https://npmjs.org/package/elastomer
+[travis-image]: https://img.shields.io/travis/nodys/elastomer.svg?style=flat&branch=master
+[travis-url]: https://travis-ci.org/nodys/elastomer
 [downloads-image]: https://img.shields.io/npm/dm/elastomer.svg?style=flat
 [downloads-url]: https://npmjs.org/package/elastomer
 
