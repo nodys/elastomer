@@ -1,7 +1,7 @@
 {
   "name": "elastomer",
   "description": "A web-component library for commonjs based on rivet",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": "Jean Ponchon <jean.ponchon@novadiscovery.com>",
   "repository": {
     "type": "git",
