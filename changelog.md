@@ -1,6 +1,12 @@
 Changelog
 =========
 
+v2.0.1 - Meticulous Kangaroo (2016-02-09) 
+----------------------------------------------------------------------
+
+  - fix: Babel-runtime need to be installed explicitly along runtimetransform for npm v2
+
+
 v2.0.0 - Malicious Dolphin (2016-02-05) 
 ----------------------------------------------------------------------
 
